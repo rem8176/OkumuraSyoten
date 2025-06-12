@@ -200,3 +200,19 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
+.about-text {
+  line-height: 1.8; /* 行間全体的にゆっくり感出る！ */
+}
+
+.about-text h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.about-text p {
+  line-height: 1.8;
+  margin-bottom: 16px;
+  color: #444;
+}
