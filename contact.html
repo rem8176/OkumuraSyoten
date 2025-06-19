@@ -8,28 +8,45 @@
         <link rel="stylesheet" href="stylesheet.css" />
     </head>
     <body>
-            <nav class="nav">
-                <li><a href="index.html">ホーム</a></li>
-                <li><a href="accessories.html">アクセサリー</a></li>
-                <li><a href="about.html">私たちについて</a></li>
-                <li><a href="contact.html">お問い合わせ</a></li>
-            </nav>
+        <nav class="nav">
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="accessory.html">アクセサリー</a></li>
+            <li><a href="about.html">私たちについて</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+            <li><a href="legal.notice.html">特定商取引に基づく表記</a></li>
+        </nav>
 
-    <header>
-            <h1>お問い合わせ</h1>
-            <p class="catch">100年後も大切にしてもらえるジュエリー</p>
-    </header>
+        <header>
+                <h1>お問い合わせ</h1>
+                <p class="catch">100年後も大切にしてもらえるジュエリー</p>
+        </header>
 
-    <form>
-        <label>お名前：</label><br>
-        <input type="text" name="name"><br>
 
-        <label>メールアドレス：</label><br>
-        <input type="email" name="email"><br>
+        <div class="contact-container">
+            <div class="contact-form">
+                <form>
+                    <label>お名前：</label><br>
+                    <input type="text" name="name"><br>
 
-        <label>お問い合わせ内容：</label><br>
-        <textarea name="message"></textarea><br>
+                    <label>メールアドレス：</label><br>
+                    <input type="email" name="email"><br>
 
-        <button type="submit">送信</button>
-    </form>
+                    <label>お問い合わせ内容：</label><br>
+                    <textarea name="message"></textarea><br>
 
+                    <button type="submit">送信</button>
+                </form>
+            </div>
+
+            <div class="contact-map">
+            <h2>店舗へのアクセス</h2>
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.7448745090614!2d139.7767040745729!3d35.70789532851078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ea248189c1d%3A0x6dc9cb6efbe557a0!2z5aWl5p2R5ZWG5bqX!5e0!3m2!1sja!2sjp!4v1750314341907!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+    </body>
+
+    <footer>
+        <p>© 2025 奥村商店</p>
+    </footer>
