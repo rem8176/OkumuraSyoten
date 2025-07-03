@@ -260,6 +260,46 @@ footer {
   border: 0;
 }
 
+<a href="https://line.me/ti/p/NfNwwwVSkl" target="_blank" class="line-btn">LINE予約 [24時間OK]</a>
+
+<style>
+.line-btn {
+  display: inline-block;
+  background-color: #00c300;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.line-btn:hover {
+  background-color: #00a300;
+}
+.line-btn {
+  display: inline-block;
+  background-color: #00c300;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 30px; /* 丸みを強めて可愛く */
+  font-weight: bold;
+  font-size: 1.2em;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3); /* 影をつけて立体感 */
+  transition: all 0.3s ease; /* ホバー時にふわっと変化 */
+}
+.line-btn:hover {
+  background-color: #00a300;
+  transform: translateY(-2px); /* ホバーでちょっと浮く */
+  box-shadow: 0 6px 8px rgba(0,0,0,0.4);
+}
+.line-btn:visited {
+  color: white;
+}
+
+
+</style>
+
+
 /* ======= 「私たちについて」の装飾 ======= */
 .about-text {
   line-height: 1.8;
