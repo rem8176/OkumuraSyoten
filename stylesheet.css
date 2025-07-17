@@ -65,7 +65,7 @@ header h1 {
 
 header .catch {
   font-size: 1rem;
-  color: #666;
+  color: #ffffffee;
   margin-top: 10px;
 }
 
@@ -88,19 +88,24 @@ main {
 }
 
 .product-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
   gap: 20px;
+  grid-template-columns: repeat(3, 1fr); /* 3列 */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .product-card {
   background: #f5f5f5;
   border-radius: 8px;
   padding: 20px;
-  max-width: 300px;
+
   width: 100%;
   text-align: center;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .product-card img {
@@ -110,7 +115,7 @@ main {
 
 .product-card h3 {
   margin: 15px 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .btn {
@@ -160,11 +165,53 @@ main {
   background-color: #01b0a3;
 }
 
-footer {
+.contact {
+  background-color: #f9f9f9;
+  padding: 40px;
+  text-align: center;
+}
+
+/*お問い合わせフォームボタン↓*/
+.form-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #00c1b3;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 16px;
+}
+
+.form-btn:hover {
+  background-color: #009c91;
+}
+
+
+/* footer {
   text-align: center;
   padding: 20px;
   background: #eee;
   margin-top: 50px;
+}*/
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #333;         /* 濃いグレーにして高級感UP */
+  color: white;             /* 文字色を白に変える！ */
+  font-size: 14px;          /* フォントサイズ指定で見やすく！ */
+  margin-top: 50px;
+}
+@media (min-width: 600px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
 }
 
 /*ーーーーーーーーーーーーーーーーーーーーーーーー*/
@@ -263,16 +310,16 @@ footer {
 
 <a href="https://line.me/ti/p/NfNwwwVSkl" target="_blank" class="line-btn">LINE予約 [24時間OK]</a>
 
-<style>
 .line-btn {
-  display: inline-block;
-  background-color: #00c300;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
+    display: inline-block;
+    background-color: #00c300;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
 }
+
 .line-btn:hover {
   background-color: #00a300;
 }
@@ -296,10 +343,6 @@ footer {
 .line-btn:visited {
   color: white;
 }
-
-
-</style>
-
 
 /* ======= 「私たちについて」の装飾 ======= */
 .about-text {
@@ -369,3 +412,14 @@ footer {
   width: 30%;
 }
 
+/*ーーーーーーーーーーメディアクエリ　レスポンシブ対応 ーーーーーーーーーーー   */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .product-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
