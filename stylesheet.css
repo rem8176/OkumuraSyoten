@@ -69,9 +69,14 @@ header .catch {
   margin-top: 10px;
 }
 
-main {
-  margin: 0%;
-  padding: 0;
+
+  main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
 }
 
 /*ーーーーーーーーーーーーーーーーーーーーーーーー*/
@@ -422,4 +427,10 @@ footer {
   .product-list {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+/* 私たちについてページのタイトルを全幅にする */
+main > header {
+  width: 100%;
+  margin: 0;
+  padding: 50px 0;
 }
